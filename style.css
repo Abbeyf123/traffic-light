@@ -18,13 +18,13 @@
 
 /* Traffic Lights Counter Styles */
 
-.traffic-lights-counter {
+.traffic-lights-counter-one, .traffic-lights-counter-two {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
 }
 
-.traffic-lights-counter span {
+.traffic-lights-counter-one span, .traffic-lights-counter-two span {
   border: 1px solid black;
   border-radius: 50%;
   text-align: center;
@@ -42,11 +42,10 @@
   margin: 10px;
 }
 
-.go-counter-two {
-  display: none;
+.traffic-lights-counter-one{
+  display: flex;
 }
-.stop-counter-one,
-.stop-counter-three {
+.traffic-lights-counter-two{
   display: none;
 }
 
@@ -64,6 +63,8 @@
   border: 1px solid black;
   padding: 0; /* Removed padding */
   padding: 1em;
+  background-color: rgb(231, 231, 237);
+  border-radius: 10px;
 }
 
 .red-one,
@@ -153,7 +154,8 @@
   .traffic-one,
   .traffic-two,
   .traffic-three {
-    padding: 1em; /* Removed padding */
+    padding: 1em; 
+    
   }
   .red-one,
   .orange-one,
@@ -177,7 +179,8 @@
   .traffic-one,
   .traffic-two,
   .traffic-three {
-    padding: 1em; /* Removed padding */
+    padding: 1em;
+    
   }
   .red-one,
   .orange-one,
